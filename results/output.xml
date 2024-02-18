@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231126 23:07:45.906" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot-Web-Test-Udemy" source="C:\Automacao\Udemy\robot-web-test-udemy">
+<suite id="s1-s1" name="variaveisEscoposArqumentos" source="C:\Automacao\Udemy\robot-web-test-udemy\variaveisEscoposArqumentos">
+<suite id="s1-s1-s1" name="ExemplosTiposVariaveis" source="C:\Automacao\Udemy\robot-web-test-udemy\variaveisEscoposArqumentos\ExemplosTiposVariaveis.robot">
+<test id="s1-s1-s1-t1" name="Caso de teste de exemplo 01" line="14">
+<kw name="Uma keyword qualquer 01">
+<kw name="Log" library="BuiltIn">
+<arg>${SIMPLES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231126 23:07:45.958" level="INFO">Vamos ver os tipos de variáveis no robot!</msg>
+<status status="PASS" starttime="20231126 23:07:45.958" endtime="20231126 23:07:45.959"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Essa tem que ser maça: ${FRUTAS[2]} e essa tem que ser morango: ${FRUTAS[0]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231126 23:07:45.960" level="INFO">Essa tem que ser maça: maça e essa tem que ser morango: morango</msg>
+<status status="PASS" starttime="20231126 23:07:45.959" endtime="20231126 23:07:45.961"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Nome: ${PESSOA.nome} e email: ${PESSOA.email}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231126 23:07:45.962" level="INFO">Nome: May Fernandes e email: mayfernandes@exemplo.com.br</msg>
+<status status="PASS" starttime="20231126 23:07:45.961" endtime="20231126 23:07:45.962"/>
+</kw>
+<status status="PASS" starttime="20231126 23:07:45.957" endtime="20231126 23:07:45.962"/>
+</kw>
+<status status="PASS" starttime="20231126 23:07:45.955" endtime="20231126 23:07:45.964"/>
+</test>
+<doc>Exemplo de tipos de variáveis: SIMPLES, LISTAS e DICIONÁRIOS</doc>
+<status status="PASS" starttime="20231126 23:07:45.951" endtime="20231126 23:07:45.965"/>
+</suite>
+<status status="PASS" starttime="20231126 23:07:45.946" endtime="20231126 23:07:45.968"/>
+</suite>
+<status status="PASS" starttime="20231126 23:07:45.912" endtime="20231126 23:07:45.971"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot-Web-Test-Udemy">Robot-Web-Test-Udemy</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="variaveisEscoposArqumentos">Robot-Web-Test-Udemy.variaveisEscoposArqumentos</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="ExemplosTiposVariaveis">Robot-Web-Test-Udemy.variaveisEscoposArqumentos.ExemplosTiposVariaveis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

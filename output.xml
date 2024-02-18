@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240218 10:42:43.949" rpa="false" schemaversion="4">
+<suite id="s1" name="amazonTestsWeb" source="C:\Automacao\Udemy\Automação de Testes com Robot Framework\Downloads\robot-web-test-udemy\amazonTestsWeb">
+<suite id="s1-s1" name="Amazon Tests.Bdd" source="C:\Automacao\Udemy\Automação de Testes com Robot Framework\Downloads\robot-web-test-udemy\amazonTestsWeb\amazon_tests.bdd.robot">
+<test id="s1-s1-t1" name="Caso de Teste 01 - Acesso ao menu 'Eletronico'" line="9">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:42:44.203" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:42:45.873" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:42:49.203" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:42:49.203" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:42:44.203" endtime="20240218 10:42:49.282"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:42:49.282" endtime="20240218 10:42:49.282"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:42:44.203" endtime="20240218 10:42:49.283"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:42:53.371" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:42:53.371" endtime="20240218 10:42:53.371"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:42:53.371" endtime="20240218 10:42:53.371"/>
+</kw>
+<status status="PASS" starttime="20240218 10:42:49.284" endtime="20240218 10:42:53.371"/>
+</kw>
+<doc>Esse teste valida menus eletronicos da Amazon.com.br</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" starttime="20240218 10:42:44.202" endtime="20240218 10:42:53.372">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<test id="s1-s1-t2" name="Caso de Teste 02 - Pesquisa de um produto" line="19">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:42:53.376" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:42:53.986" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:42:57.187" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:42:57.187" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:42:53.376" endtime="20240218 10:42:57.190"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:42:57.191" endtime="20240218 10:42:57.191"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:42:53.376" endtime="20240218 10:42:57.191"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:42:57.192" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:42:57.192" endtime="20240218 10:42:57.193"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:42:57.193" endtime="20240218 10:42:57.193"/>
+</kw>
+<status status="PASS" starttime="20240218 10:42:57.192" endtime="20240218 10:42:57.193"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>buca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20240218 10:42:53.376" endtime="20240218 10:42:57.193">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<test id="s1-s1-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="28">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:42:57.197" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:42:57.812" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:01.043" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:43:01.043" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:42:57.197" endtime="20240218 10:43:01.045"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:43:01.045" endtime="20240218 10:43:01.045"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:42:57.197" endtime="20240218 10:43:01.045"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:43:01.046" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:43:01.046" endtime="20240218 10:43:01.046"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:43:01.046" endtime="20240218 10:43:01.046"/>
+</kw>
+<status status="PASS" starttime="20240218 10:43:01.045" endtime="20240218 10:43:01.046"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20240218 10:42:57.197" endtime="20240218 10:43:01.046">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<test id="s1-s1-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="36">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:43:01.051" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:43:09.234" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:12.377" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:43:12.377" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:43:01.051" endtime="20240218 10:43:12.382"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:43:12.382" endtime="20240218 10:43:12.382"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:43:01.051" endtime="20240218 10:43:12.383"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:43:12.384" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:43:12.384" endtime="20240218 10:43:12.384"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:43:12.384" endtime="20240218 10:43:12.384"/>
+</kw>
+<status status="PASS" starttime="20240218 10:43:12.383" endtime="20240218 10:43:12.385"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20240218 10:43:01.050" endtime="20240218 10:43:12.385">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" starttime="20240218 10:42:43.972" endtime="20240218 10:43:12.392"/>
+</suite>
+<suite id="s1-s2" name="Amazon Tests" source="C:\Automacao\Udemy\Automação de Testes com Robot Framework\Downloads\robot-web-test-udemy\amazonTestsWeb\amazon_tests.robot">
+<test id="s1-s2-t1" name="Caso de Teste 01 - Acesso ao menu 'Eletronico'" line="9">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:43:12.398" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:43:12.991" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:16.188" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:43:16.189" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:43:12.398" endtime="20240218 10:43:16.190"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:43:16.190" endtime="20240218 10:43:16.190"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:43:12.398" endtime="20240218 10:43:16.190"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:43:16.191" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:43:16.191" endtime="20240218 10:43:16.191"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:43:16.191" endtime="20240218 10:43:16.191"/>
+</kw>
+<status status="PASS" starttime="20240218 10:43:16.191" endtime="20240218 10:43:16.191"/>
+</kw>
+<doc>Esse teste valida menus eletronicos da Amazon.com.br</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" starttime="20240218 10:43:12.398" endtime="20240218 10:43:16.192">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<test id="s1-s2-t2" name="Caso de Teste 02 - Pesquisa de um produto" line="21">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:43:16.196" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:43:16.796" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:20.014" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:43:20.014" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:43:16.196" endtime="20240218 10:43:20.019"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:43:20.019" endtime="20240218 10:43:20.020"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:43:16.196" endtime="20240218 10:43:20.020"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:43:20.022" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:43:20.022" endtime="20240218 10:43:20.023"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:43:20.023" endtime="20240218 10:43:20.023"/>
+</kw>
+<status status="PASS" starttime="20240218 10:43:20.021" endtime="20240218 10:43:20.023"/>
+</kw>
+<doc>Esse teste verifica a busca de um produto</doc>
+<tag>buca_produtos</tag>
+<tag>lista_busca</tag>
+<status status="FAIL" starttime="20240218 10:43:16.196" endtime="20240218 10:43:20.025">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<test id="s1-s2-t3" name="Caso de Teste 03 - Adicionar Produto no Carrinho" line="30">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:43:20.040" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:43:20.732" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:23.940" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:43:23.940" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:43:20.040" endtime="20240218 10:43:23.941"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:43:23.941" endtime="20240218 10:43:23.941"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:43:20.038" endtime="20240218 10:43:23.941"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:43:23.942" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:43:23.942" endtime="20240218 10:43:23.942"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:43:23.942" endtime="20240218 10:43:23.942"/>
+</kw>
+<status status="PASS" starttime="20240218 10:43:23.941" endtime="20240218 10:43:23.942"/>
+</kw>
+<doc>Esse teste verifica a adição de um produto no carrinho de compras</doc>
+<tag>adicionar_carrinho</tag>
+<status status="FAIL" starttime="20240218 10:43:20.037" endtime="20240218 10:43:23.942">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<test id="s1-s2-t4" name="Caso de Teste 04 - Remover Produto do Carrinho" line="41">
+<kw name="Abrir o navegador" library="amazon_resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240218 10:43:23.944" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20240218 10:43:32.728" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:35.909" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240218 10:43:35.909" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</msg>
+<status status="FAIL" starttime="20240218 10:43:23.944" endtime="20240218 10:43:35.910"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240218 10:43:35.910" endtime="20240218 10:43:35.910"/>
+</kw>
+<status status="FAIL" starttime="20240218 10:43:23.944" endtime="20240218 10:43:35.910"/>
+</kw>
+<kw name="Fechar o novegador" library="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240218 10:43:35.911" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20240218 10:43:35.911" endtime="20240218 10:43:35.911"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240218 10:43:35.911" endtime="20240218 10:43:35.911"/>
+</kw>
+<status status="PASS" starttime="20240218 10:43:35.911" endtime="20240218 10:43:35.911"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="FAIL" starttime="20240218 10:43:23.944" endtime="20240218 10:43:35.911">Setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 119
+Current browser version is 121.0.6167.185 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BAF486D2+54882]
+	(No symbol) [0x00007FF7BAEB6822]
+	(No symbol) [0x00007FF7BAD705CB]
+	(No symbol) [0x00007FF7BADA3E82]
+	(No symbol) [0x00007FF7BADA330E]
+	(No symbol) [0x00007FF7BAD9EC88]
+	(No symbol) [0x00007FF7BAD9B31E]
+	(No symbol) [0x00007FF7BADD9EF8]
+	(No symbol) [0x00007FF7BADD9A10]
+	(No symbol) [0x00007FF7BADD1E83]
+	(No symbol) [0x00007FF7BADA671A]
+	(No symbol) [0x00007FF7BADA7964]
+	GetHandleVerifier [0x00007FF7BB2C1AAB+3697211]
+	GetHandleVerifier [0x00007FF7BB317F4E+4050654]
+	GetHandleVerifier [0x00007FF7BB30FDE3+4017523]
+	GetHandleVerifier [0x00007FF7BAFE5EE6+700022]
+	(No symbol) [0x00007FF7BAEC19C8]
+	(No symbol) [0x00007FF7BAEBDB74]
+	(No symbol) [0x00007FF7BAEBDCA2]
+	(No symbol) [0x00007FF7BAEADDA3]
+	BaseThreadInitThunk [0x00007FFFEF9E257D+29]
+	RtlUserThreadStart [0x00007FFFEFEAAA58+40]
+</status>
+</test>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" starttime="20240218 10:43:12.393" endtime="20240218 10:43:35.913"/>
+</suite>
+<status status="FAIL" starttime="20240218 10:42:43.951" endtime="20240218 10:43:35.914"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">adicionar_carrinho</stat>
+<stat pass="0" fail="2" skip="0">buca_produtos</stat>
+<stat pass="0" fail="2" skip="0">categorias</stat>
+<stat pass="0" fail="2" skip="0">lista_busca</stat>
+<stat pass="0" fail="2" skip="0">menus</stat>
+<stat pass="0" fail="2" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="amazonTestsWeb">amazonTestsWeb</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s1" name="Amazon Tests.Bdd">amazonTestsWeb.Amazon Tests.Bdd</stat>
+<stat pass="0" fail="4" skip="0" id="s1-s2" name="Amazon Tests">amazonTestsWeb.Amazon Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240218 10:42:45.873" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:42:53.986" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:42:57.812" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:09.234" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:12.991" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:16.796" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:20.732" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240218 10:43:32.728" level="WARN">The chromedriver version (119.0.6045.159) detected in PATH at C:\Users\rodri\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (121.0.6167.185); currently, chromedriver 121.0.6167.184 is recommended for chrome 121.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
